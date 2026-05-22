@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIECCCFEM | Seguridad Privada Profesional en Morelia</title>
+    <meta name="description" content="CIECCCFEM - Empresa líder de seguridad privada en Morelia, Michoacán. Sistemas de seguridad, vigilancia para empresas, fraccionamientos, obras y eventos.">
+    <meta name="keywords" content="seguridad privada Morelia, vigilancia Michoacán, seguridad empresarial, guardias de seguridad, eventos seguridad">
+    <meta name="author" content="CIECCCFEM">
+    <meta property="og:title" content="CIECCCFEM | Seguridad Privada Profesional">
+    <meta property="og:description" content="Protección integral para empresas, fraccionamientos, obras y eventos en Morelia, Michoacán.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:url" content="https://ciecccfem.github.io">
+    <meta name="google-site-verification" content="TU-CODIGO-DE-VERIFICACION">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="assets/logo.png" alt="CIECCCFEM Logo" class="preloader-logo">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="CIECCCFEM">
+                <span class="logo-text">CIECCCFEM</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="bolsa-trabajo.html" class="nav-link">Bolsa de Trabajo</a></li>
+                <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-separator"></li>
+                <li>
+                    <button class="lang-btn" id="langBtn" onclick="toggleLanguage()">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">ES</span>
+                    </button>
+                </li>
+                <li>
+                    <a href="login.html" class="btn btn-outline nav-cta">
+                        <i class="fas fa-user-shield"></i>
+                        <span data-es="Acceso" data-en="Login">Acceso</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <i class="fas fa-shield-alt"></i>
+                <span data-es="SEGURIDAD PRIVADA PROFESIONAL" data-en="PROFESSIONAL PRIVATE SECURITY">SEGURIDAD PRIVADA PROFESIONAL</span>
+            </div>
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="title-line" data-es="PROTEGEMOS LO QUE" data-en="WE PROTECT WHAT">PROTEGEMOS LO QUE</span>
+                <span class="title-line highlight" data-es="MÁS VALORAS" data-en="YOU VALUE MOST">MÁS VALORAS</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" 
+               data-es="Más de una década protegiendo empresas, fraccionamientos, obras y eventos en Morelia y todo Michoacán." 
+               data-en="Over a decade protecting businesses, residential areas, construction sites and events in Morelia and all of Michoacán.">
+                Más de una década protegiendo empresas, fraccionamientos, obras y eventos en Morelia y todo Michoacán.
+            </p>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="servicios.html" class="btn btn-primary btn-lg">
+                    <span data-es="Nuestros Servicios" data-en="Our Services">Nuestros Servicios</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="contacto.html" class="btn btn-outline btn-lg">
+                    <span data-es="Cotizar Ahora" data-en="Get a Quote">Cotizar Ahora</span>
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label" data-es="Años de Experiencia" data-en="Years Experience">Años de Experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label" data-es="Clientes Satisfechos" data-en="Happy Clients">Clientes Satisfechos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-suffix">/7</span>
+                    <span class="stat-label" data-es="Disponibilidad" data-en="Availability">Disponibilidad</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator"><span></span></div>
+        </div>
+    </section>
+
+    <section class="services-preview" id="servicios-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-es="NUESTROS SERVICIOS" data-en="OUR SERVICES">NUESTROS SERVICIOS</span>
+                <h2 class="section-title" data-es="Soluciones Integrales de Seguridad" data-en="Comprehensive Security Solutions">Soluciones Integrales de Seguridad</h2>
+                <p class="section-desc" data-es="Ofrecemos servicios adaptados a las necesidades específicas de cada cliente." data-en="We offer services tailored to the specific needs of each client.">
+                    Ofrecemos servicios adaptados a las necesidades específicas de cada cliente.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon"><i class="fas fa-video"></i></div>
+                    <h3 data-es="Sistemas de Seguridad" data-en="Security Systems">Sistemas de Seguridad</h3>
+                    <p data-es="CCTV, alarmas, control de acceso y monitoreo 24/7 con tecnología de punta." data-en="CCTV, alarms, access control and 24/7 monitoring with cutting-edge technology.">
+                        CCTV, alarmas, control de acceso y monitoreo 24/7 con tecnología de punta.
+                    </p>
+                    <a href="servicios.html#sistemas" class="service-link">
+                        <span data-es="Ver más" data-en="Learn more">Ver más</span><i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h3 data-es="Seguridad Empresarial" data-en="Corporate Security">Seguridad Empresarial</h3>
+                    <p data-es="Protección para empresas públicas y privadas con personal altamente capacitado." data-en="Protection for public and private companies with highly trained personnel.">
+                        Protección para empresas públicas y privadas con personal altamente capacitado.
+                    </p>
+                    <a href="servicios.html#empresas" class="service-link">
+                        <span data-es="Ver más" data-en="Learn more">Ver más</span><i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-home"></i></div>
+                    <h3 data-es="Fraccionamientos y Obras" data-en="Residential & Construction">Fraccionamientos y Obras</h3>
+                    <p data-es="Vigilancia y prevención especializada para comunidades residenciales y obras en construcción." data-en="Specialized surveillance and prevention for residential communities and construction sites.">
+                        Vigilancia y prevención especializada para comunidades residenciales y obras en construcción.
+                    </p>
+                    <a href="servicios.html#fraccionamientos" class="service-link">
+                        <span data-es="Ver más" data-en="Learn more">Ver más</span><i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-glass-cheers"></i></div>
+                    <h3 data-es="Eventos y Fiestas" data-en="Events & Parties">Eventos y Fiestas</h3>
+                    <p data-es="Seguridad y vigilancia para eventos públicos y privados de cualquier magnitud." data-en="Security and surveillance for public and private events of any magnitude.">
+                        Seguridad y vigilancia para eventos públicos y privados de cualquier magnitud.
+                    </p>
+                    <a href="servicios.html#eventos" class="service-link">
+                        <span data-es="Ver más" data-en="Learn more">Ver más</span><i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content" data-aos="fade-right">
+                    <span class="section-tag" data-es="¿POR QUÉ ELEGIRNOS?" data-en="WHY CHOOSE US?">¿POR QUÉ ELEGIRNOS?</span>
+                    <h2 class="section-title" data-es="Excelencia en Protección y Vigilancia" data-en="Excellence in Protection and Surveillance">Excelencia en Protección y Vigilancia</h2>
+                    <p data-es="En CIECCCFEM combinamos experiencia, tecnología y personal altamente capacitado para ofrecer el mejor servicio de seguridad privada en la región." data-en="At CIECCCFEM we combine experience, technology and highly trained personnel to offer the best private security service in the region.">
+                        En CIECCCFEM combinamos experiencia, tecnología y personal altamente capacitado para ofrecer el mejor servicio de seguridad privada en la región.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
+                                <h4 data-es="Personal Certificado" data-en="Certified Personnel">Personal Certificado</h4>
+                                <p data-es="Guardias con capacitación continua y certificaciones vigentes." data-en="Guards with continuous training and current certifications.">Guardias con capacitación continua y certificaciones vigentes.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
+                                <h4 data-es="Tecnología Avanzada" data-en="Advanced Technology">Tecnología Avanzada</h4>
+                                <p data-es="Equipamiento de última generación para monitoreo y comunicación." data-en="State-of-the-art equipment for monitoring and communication.">Equipamiento de última generación para monitoreo y comunicación.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
+                                <h4 data-es="Respuesta Inmediata" data-en="Immediate Response">Respuesta Inmediata</h4>
+                                <p data-es="Protocolos de actuación rápida ante cualquier eventualidad." data-en="Rapid action protocols for any eventuality.">Protocolos de actuación rápida ante cualquier eventualidad.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
+                                <h4 data-es="Cobertura Total" data-en="Full Coverage">Cobertura Total</h4>
+                                <p data-es="Servicio en Morelia y todo el estado de Michoacán." data-en="Service in Morelia and throughout the state of Michoacán.">Servicio en Morelia y todo el estado de Michoacán.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contacto.html" class="btn btn-primary">
+                        <span data-es="Solicitar Cotización" data-en="Request Quote">Solicitar Cotización</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="why-us-image" data-aos="fade-left">
+                    <div class="image-frame">
+                        <img src="assets/images/guardia-profesional.jpg" alt="Guardia de seguridad CIECCCFEM">
+                        <div class="image-badge">
+                            <i class="fas fa-award"></i>
+                            <span data-es="Certificados" data-en="Certified">Certificados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="job-banner" id="job-banner">
+        <div class="container">
+            <div class="job-banner-content" data-aos="zoom-in">
+                <div class="job-banner-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="job-banner-text">
+                    <h3 data-es="¿Buscas trabajo como Agente de Seguridad?" data-en="Looking for work as a Security Agent?">¿Buscas trabajo como Agente de Seguridad?</h3>
+                    <p data-es="Únete al equipo CIECCCFEM. Ofrecemos sueldo base, capacitación, trabajo estable y turnos flexibles." data-en="Join the CIECCCFEM team. We offer base salary, training, stable work and flexible shifts.">
+                        Únete al equipo CIECCCFEM. Ofrecemos sueldo base, capacitación, trabajo estable y turnos flexibles.
+                    </p>
+                </div>
+                <a href="bolsa-trabajo.html" class="btn btn-light btn-lg">
+                    <span data-es="Ver Vacantes" data-en="View Jobs">Ver Vacantes</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-es="TESTIMONIOS" data-en="TESTIMONIALS">TESTIMONIOS</span>
+                <h2 class="section-title" data-es="Lo Que Dicen Nuestros Clientes" data-en="What Our Clients Say">Lo Que Dicen Nuestros Clientes</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-es="Excelente servicio de vigilancia para nuestro fraccionamiento. Los guardias son muy profesionales y atentos. Totalmente recomendados." data-en="Excellent surveillance service for our residential area. The guards are very professional and attentive. Highly recommended.">
+                        "Excelente servicio de vigilancia para nuestro fraccionamiento. Los guardias son muy profesionales y atentos. Totalmente recomendados."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Ing. Roberto Martínez</h4>
+                            <span data-es="Administrador de Fraccionamiento" data-en="Residential Administrator">Administrador de Fraccionamiento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-es="Contratamos a CIECCCFEM para la seguridad de nuestro evento corporativo y el servicio fue impecable. Muy profesionales." data-en="We hired CIECCCFEM for the security of our corporate event and the service was impeccable. Very professional.">
+                        "Contratamos a CIECCCFEM para la seguridad de nuestro evento corporativo y el servicio fue impecable. Muy profesionales."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Lic. Ana Gómez</h4>
+                            <span data-es="Directora de Eventos" data-en="Events Director">Directora de Eventos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-es="La seguridad en nuestra obra de construcción mejoró notablemente desde que contratamos a CIECCCFEM. Personal muy responsable." data-en="Security at our construction site improved notably since we hired CIECCCFEM. Very responsible staff.">
+                        "La seguridad en nuestra obra de construcción mejoró notablemente desde que contratamos a CIECCCFEM. Personal muy responsable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Arq. Carlos Hernández</h4>
+                            <span data-es="Constructora del Centro" data-en="Central Construction">Constructora del Centro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev" onclick="changeTestimonial(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonials-dots">
+                        <span class="dot active" onclick="goToTestimonial(0)"></span>
+                        <span class="dot" onclick="goToTestimonial(1)"></span>
+                        <span class="dot" onclick="goToTestimonial(2)"></span>
+                    </div>
+                    <button class="testimonial-next" onclick="changeTestimonial(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 data-es="¿Necesitas Protección Profesional?" data-en="Need Professional Protection?">¿Necesitas Protección Profesional?</h2>
+                <p data-es="Contáctanos hoy mismo y recibe una cotización personalizada sin compromiso." data-en="Contact us today and receive a personalized quote with no obligation.">
+                    Contáctanos hoy mismo y recibe una cotización personalizada sin compromiso.
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:+524431224145" class="btn btn-light btn-lg">
+                        <i class="fas fa-phone"></i><span>+52 443 122 4145</span>
+                    </a>
+                    <a href="https://wa.me/524431224145" class="btn btn-whatsapp btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <img src="assets/logo.png" alt="CIECCCFEM" class="footer-logo">
+                        <p data-es="Empresa líder en seguridad privada en Morelia, Michoacán. Protección integral 24/7." data-en="Leading private security company in Morelia, Michoacán. 24/7 comprehensive protection.">
+                            Empresa líder en seguridad privada en Morelia, Michoacán. Protección integral 24/7.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/ciecccfem" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/524431224145" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="mailto:ciecccfem.crimi@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4 data-es="Servicios" data-en="Services">Servicios</h4>
+                        <ul>
+                            <li><a href="servicios.html#sistemas" data-es="Sistemas de Seguridad" data-en="Security Systems">Sistemas de Seguridad</a></li>
+                            <li><a href="servicios.html#empresas" data-es="Seguridad Empresarial" data-en="Corporate Security">Seguridad Empresarial</a></li>
+                            <li><a href="servicios.html#fraccionamientos" data-es="Fraccionamientos" data-en="Residential">Fraccionamientos</a></li>
+                            <li><a href="servicios.html#eventos" data-es="Eventos" data-en="Events">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 data-es="Empresa" data-en="Company">Empresa</h4>
+                        <ul>
+                            <li><a href="bolsa-trabajo.html" data-es="Bolsa de Trabajo" data-en="Careers">Bolsa de Trabajo</a></li>
+                            <li><a href="galeria.html" data-es="Galería" data-en="Gallery">Galería</a></li>
+                            <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                            <li><a href="login.html" data-es="Acceso Clientes" data-en="Client Login">Acceso Clientes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i><span>Avenida Periodismo #2325-2B, Col. Jardines de Torremolinos, Morelia, Michoacán, C.P. 58197</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+524431224145">+52 443 122 4145</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:ciecccfem.crimi@gmail.com">ciecccfem.crimi@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-es="© 2026 CIECCCFEM. Todos los derechos reservados." data-en="© 2026 CIECCCFEM. All rights reserved.">
+                    © 2026 CIECCCFEM. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="#" data-es="Aviso de Privacidad" data-en="Privacy Policy">Aviso de Privacidad</a>
+                    <a href="#" data-es="Términos y Condiciones" data-en="Terms & Conditions">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/524431224145" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-es="¡Escríbenos!" data-en="Chat with us!">¡Escríbenos!</span>
+    </a>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+</body>
+</html>
