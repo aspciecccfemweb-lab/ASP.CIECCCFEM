@@ -1,0 +1,288 @@
+/* ============================================
+   CIECCCFEM - RESPONSIVE STYLESHEET
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background: var(--color-primary);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 40px 40px;
+        gap: 0;
+        transition: var(--transition-normal);
+        border-left: 1px solid var(--color-border);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 1.1rem;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .nav-separator {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .lang-btn {
+        margin-top: 10px;
+    }
+
+    .nav-cta {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .why-us-grid,
+    .service-detail-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-detail-grid.reverse {
+        direction: ltr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item.wide {
+        grid-column: span 1;
+    }
+
+    .gallery-item.tall {
+        grid-row: span 1;
+    }
+
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-left {
+        min-height: 30vh;
+        padding: 40px 20px;
+    }
+
+    .auth-right {
+        padding: 40px 20px;
+    }
+
+    .job-banner-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .job-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-stats {
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .hero {
+        padding: 100px 20px 60px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-suffix {
+        font-size: 1.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-frame::before {
+        display: none;
+    }
+
+    .image-badge {
+        right: 10px;
+        bottom: 10px;
+        padding: 10px 16px;
+        font-size: 0.75rem;
+    }
+
+    .features-list {
+        gap: 16px;
+    }
+
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    .gallery-filter {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .apply-methods {
+        flex-direction: column;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        gap: 40px;
+    }
+
+    .emergency-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map-overlay {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+    }
+
+    .map-card {
+        max-width: 100%;
+    }
+
+    .lightbox-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .lightbox-prev { left: 10px; }
+    .lightbox-next { right: 10px; }
+
+    .back-to-top {
+        right: 30px;
+        bottom: 100px;
+    }
+
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 8px 16px;
+    }
+
+    .btn-lg {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .job-body {
+        padding: 24px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper {
+        padding: 24px;
+    }
+
+    .auth-left {
+        display: none;
+    }
+
+    .auth-right {
+        padding: 30px 20px;
+    }
+}
